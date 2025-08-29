@@ -20,8 +20,10 @@ async function getProduct(id: string): Promise<Product> {
   return res.json()
 }
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-  const product = await getProduct(params.id)
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const product = await getProduct(id)
+
   console.log(product)
 
   return (

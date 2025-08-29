@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function HeroBanner() {
   return (
@@ -29,11 +30,14 @@ export default function HeroBanner() {
 
         {/* Right: Product Image */}
         <div className="mt-12 md:mt-0">
-          <img
-            src="hero-shoes.jpg"
+          <Image
+            src="/hero-shoes.jpg"
             alt="Hero Product"
+            width={600} // replace with your desired width
+            height={400} // replace with your desired height
             className="mx-auto max-h-[400px] w-auto rounded-xl shadow-lg"
           />
+
         </div>
       </div>
     </section>

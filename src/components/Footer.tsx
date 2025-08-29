@@ -36,13 +36,15 @@ export default function Footer() {
             <div>
               <h5 className="mb-3 font-semibold">SHOP</h5>
               <ul className="space-y-2 text-sm">
-                <li>Men's Shoes</li>
-                <li>Women's Shoes</li>
-                <li>Men's Apparel</li>
-                <li>Women's Apparel</li>
-                <li>Socks</li>
-                <li>Gift Cards</li>
-                <li>Refer a Friend</li>
+                <ul className="space-y-2 text-sm">
+                  <li>Men Shoes</li>
+                  <li>Women Shoes</li>
+                  <li>Men Apparel</li>
+                  <li>Women Apparel</li>
+                  <li>Socks</li>
+                  <li>Gift Cards</li>
+                  <li>Refer a Friend</li>
+                </ul>
               </ul>
             </div>
             <div>
